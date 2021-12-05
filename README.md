@@ -1,4 +1,4 @@
-# FE_project1
+# FrontEnd
 
 project : tourist homepage
 
