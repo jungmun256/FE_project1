@@ -1,2 +1,5 @@
 # FE_project1
-tourist homepage 
+
+project : tourist homepage
+
+hw : layout, form, response web
