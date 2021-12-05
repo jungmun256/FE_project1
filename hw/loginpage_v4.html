@@ -1,0 +1,169 @@
+<!-- 페이지 레이아웃 적용 , 폰트 적용-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/img1.ico">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./css/loginstyle.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h2>회원가입</h2>
+        </header>
+        <div id="container">
+            <form action="register.php">
+                <div id="id">
+                    <p>
+                        <label>
+                            아이디
+                            <input type="text" placeholder="아이디" title="id" >
+                            <input type="button" value="중복 확인">
+                            <br>
+                        </label>
+                    </p>
+                </div>
+                <div id="pw">
+                    <label>
+                        비밀번호
+                        <input type="password" placeholder="비밀번호" title="pw"><br>
+                        <p id="trans">
+                            * 영문/숫자/특수문자 2가지 조합시 10~15자리, 3가지 조합시 8~15자리로 입력해주세요
+                        </p>
+                    </label>
+                    <div id="pwck">
+                        <label>
+                            비밀번호 확인
+                            <input type="password" placeholder="비밀번호 확인" title="pw">
+                        </label>
+                    </div>
+                </div>
+                <div id="name">
+                    <label>
+                        이름
+                        <input type="text" placeholder="이름" id="name" title="name" size="8">
+                    </label>
+                </div>
+                <div id="idnum">
+                    <label>
+                        주민등록번호
+                        <input type="text" placeholder="앞 6자리(ex 690611)" title="idnum" size="17">
+                        -
+                        <input type="password" placeholder="주민등록번호 뒷번호" title="idnum" size="17">
+                    </label>
+                </div>
+                <div class="select">
+                    핸드폰 번호
+                    <input type="text" list="firstnumber" placeholder="010" id="phone" title="phnum" size="6">
+                    <datalist id="firstnumber">
+                        <option>010</option>
+                        <option>011</option>
+                        <option>016</option>
+                        <option>017</option>
+                        <option>018</option>
+                        <option>019</option>
+                    </datalist>
+                    <input type="text" placeholder=" (-) 없이" title="phnum2" size="10">
+                </div>
+                <div class="select">
+                    이메일
+                    <input type="text" placeholder="이메일" size="15">@
+                    <input type="text" list="mail" placeholder="직접입력" size="15">
+                    <datalist id="mail">
+                        <option>직접입력</option>
+                        <option>gmail.com</option>
+                        <option>naver.com</option>
+                        <option>nate.com</option>
+                        <option>daum.net</option>
+                        <option>hotmail.com</option>
+                        <option>yahoo.co.kr</option>
+                        <option>paran.com</option>
+                        <option>empas.com</option>
+                        <option>dreamwiz.com</option>
+                        <option>freechal.com</option>
+                        <option>lycos.co.kr</option>
+                        <option>korea.com</option>
+                        <option>hanmir.com</option>
+                    </datalist>
+                    <input type="button" value="중복확인">
+                </div>
+                <div id="address">
+                    <div>
+                        <label>
+                            <!-- https://www.poesis.org/postcodify/guide/example -->
+                            우편번호 <input type="text" name="zipcode" class="postcodify_postcode5" value="" title="address" size="8"/>
+                            <button type="button" id="postcodify_search_button">검색</button><br />
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            주소 
+                            <input type="text" name="address" class="postcodify_address" value="" title="address2" size="40"/>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            상세 주소
+                            <input type="text" name="address_detail" class="postcodify_details" value="" size="20"/>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            참고 항목 
+                            <input type="text" name="address_etc" class="postcodify_extra_info" value="" title="addressetc" size="20"/>
+                        </label>
+                    </div>
+                </div>
+                <div id="gender">
+                    <fieldset style="width: fit-content;">
+                        <legend>성별</legend>
+                        여자<input type="radio" name="gender" checked>
+                        남자<input type="radio" name="gender">
+                    </fieldset> 
+                </div>
+                <div id="hobby">
+                    <fieldset style="width: fit-content;">
+                        <legend>취미 [다중 선택 가능]</legend>
+                        운동<input type="checkbox">
+                        수영<input type="checkbox">
+                        사이클<input type="checkbox">
+                        퍼즐<input type="checkbox">
+                        요가<input type="checkbox">
+                        도예<input type="checkbox">
+                        기타<input type="text" placeholder="직접입력">
+                    </fieldset>
+                </div>
+                <div id="etc">
+                    <legend>참고항목</legend>
+                    <textarea cols="50" rows="5"></textarea>
+                </div>
+                <div id="sub">
+                    <input type="submit" value="가입완료">
+                    <input type="reset" value="다시 작성">
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div id="hw">
+                <h5>과제</h5>
+                <ul>
+                    <li><a href="./layout.html">레이아웃</a></li>
+                    <li><a href="./solo.html">솔로의 식탁</a></li>
+                    <li><a href="./cafe.html">카페 소개</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<!-- jQuery와 Postcodify를 로딩한다 -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="//d1p7wdleee1q2z.cloudfront.net/post/search.min.js"></script>
+
+<!-- "검색" 단추를 누르면 팝업 레이어가 열리도록 설정한다 -->
+<script> $(function() { $("#postcodify_search_button").postcodifyPopUp(); }); </script>
+
+</html>

@@ -1,0 +1,31 @@
+div{
+    padding: 20px;
+    border: 1px solid gray;
+}
+#wrap{
+    width: 1000px;
+    margin:0 auto;
+}
+#header{
+    width: 950px;
+    margin-bottom: 20px;
+
+}
+#sidebarleft{
+    width: 150px;
+    float: left;
+    margin-right: 33px;
+}
+#contents{
+    width: 500px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 33px;
+}
+#sidebarright{
+    width: 150px;
+    float: left;
+}
+#footer{
+    clear: both;
+}

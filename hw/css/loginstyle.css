@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'KOTRA_GOTHIC';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_GOTHIC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'KOTRA_GOTHIC';
+}
+
+header{
+    text-align: center;
+}
+*{
+    box-sizing: border-box;
+}
+#container{
+    width: 700px;
+    height: 1000px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+/* div{
+    border: 1px solid grey;
+} */
+#id, #pw, #idnum{
+    margin: 3%;
+}
+#name, #address{
+    margin-left: 3%;
+}
+.select{
+    margin-left: 4.5%;
+    margin-bottom: 2%;
+}
+label{
+    padding: 10px;
+}
+#address > div{
+    padding-bottom: 2%;
+}
+#gender, #hobby, #etc{
+    margin-left: 3%;
+    margin-top: 2%;
+}
+#sub {
+    padding: 3%;
+    text-align: center;
+}
+#hw{
+    text-align: center;
+    padding: 3%;
+}
+#hw > h5{
+    display: inline;
+}
+li{
+    list-style:none;
+    display: inline-block;
+    margin-right: 2%;
+}
+a{text-decoration: none;}
+a:link, a:visited, a:hover, a:focus{
+    color: #444;
+}
+p, legend{
+    font-weight: bold;
+}
+#trans{
+    font-size: xx-small;
+    font-weight: normal;
+}
+textarea{
+    resize: none;
+}
+input[type="text"]:focus{
+    background-color: rgb(240, 240, 240);
+    border: 1px solid gray;
+    outline: none;
+}
+input[type="password"]:focus{
+    background-color: rgb(240, 240, 240);
+    border: 1px solid gray;
+    outline: none;
+}
+input[type="button"], input[type="reset"]{
+    margin: 5px 5px;
+    /* border-radius: 1px; */
+    cursor: pointer;
+}
