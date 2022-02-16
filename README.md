@@ -1,5 +1,5 @@
-# FrontEnd
+# FrontEnd - html / css / 반응형
 
-project : tourist homepage
+1. project : tourist homepage
 
-hw : layout, form, response web
+2. hw : layout, form, response web
